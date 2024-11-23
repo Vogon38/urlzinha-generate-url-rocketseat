@@ -39,7 +39,7 @@ public class Main implements RequestHandler<Map<String, Object>, Map<String, Str
         try {
             String urlDataJson = objectMapper.writeValueAsString(urlData);
             PutObjectRequest request = PutObjectRequest.builder()
-                    .bucket("urlzinha")
+                    .bucket("your-bucket-name")
                     .key(shortUrlCode + ".json")
                     .build();
 
